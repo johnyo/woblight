@@ -42,47 +42,43 @@ void MainPage::OnNavigatedTo(NavigationEventArgs^ e)
 
 void woblight::MainPage::Button_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
 {
-	//myText->Text = "HEY";
-	//myButton->Background = ref new SolidColorBrush(Colors.Red);
 
-	// THIS WORKS
-	/*
-	SolidColorBrush^ myBrush = ref new SolidColorBrush();
-	myBrush->Color = Windows::UI::Colors::AliceBlue;
-
-	myButton->Background = myBrush;
-	*/
-
-	//SolidColorBrush^ myBrush = ref new SolidColorBrush();
-	//myBrush->Color = Windows::UI::Colors::AliceBlue;
-
-
-	SolidColorBrush^ myBrush = ref new SolidColorBrush();
+	SolidColorBrush^ backgroundColor = ref new SolidColorBrush();
+	SolidColorBrush^ textColor = ref new SolidColorBrush();
 
 	switch( wobNum % 6 ) {
 		case 0:
-			myBrush->Color = Windows::UI::Colors::AliceBlue;
+			backgroundColor->Color = Windows::UI::Colors::AliceBlue;
+			textColor->Color = Windows::UI::Colors::Orange;
 			break;
 		case 1:
-			myBrush->Color = Windows::UI::Colors::Black;
+			backgroundColor->Color = Windows::UI::Colors::Red;
+			textColor->Color = Windows::UI::Colors::Blue;
 			break;
 		case 2:
-			myBrush->Color = Windows::UI::Colors::Blue;
+			backgroundColor->Color = Windows::UI::Colors::Pink;
+			textColor->Color = Windows::UI::Colors::Black;
 			break;
 		case 3:
-			myBrush->Color = Windows::UI::Colors::Red;
+			backgroundColor->Color = Windows::UI::Colors::Purple;
+			textColor->Color = Windows::UI::Colors::Green;
 			break;
 		case 4:
-			myBrush->Color = Windows::UI::Colors::Yellow;
+			backgroundColor->Color = Windows::UI::Colors::PeachPuff;
+			textColor->Color = Windows::UI::Colors::Yellow;
 			break;
 		default:
-			myBrush->Color = Windows::UI::Colors::Orange;
+			backgroundColor->Color = Windows::UI::Colors::OrangeRed;
+			textColor->Color = Windows::UI::Colors::CadetBlue;
 			break;
 	}
 
 	wobNum++;
 
-	myBackground->Fill = myBrush;
+	myBackground->Fill = backgroundColor;
+	myTextOverlay->Foreground = textColor;
+
 
 }
+
 

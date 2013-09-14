@@ -9,12 +9,17 @@
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
         
-        <!--<TextBlock x:Name="myText"/>-->
+        <!-- Wob background -->
         <Rectangle Name="myBackground" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Fill="Blue"/>
 
-        <!--<Button Click="Button_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Opacity="0.1" Background="#B3C98888"/>-->
-        <Button Name="myButton" Click="Button_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Opacity="0.0" Background="#B3C98888"/>
-            
+        <!-- Optional Wob Light image overlay-->
+        <Image Name="myWoblightOverlay" Source="woblight.png" Visibility="Collapsed" />
+       
+        <!-- Optional Wob Light text overlay -->
+        <TextBlock Name="myTextOverlay" Text="John" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="550" Foreground="Red" FontWeight="Bold" />
+
+        <!-- Invisible button overlawy to allow wobbing -->
+        <Button Name="myButton" PointerMoved="Button_Click"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Opacity="0.0" Background="#B3C98888" />   
         
     </Grid>
 

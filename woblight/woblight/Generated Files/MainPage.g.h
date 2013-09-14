@@ -21,6 +21,8 @@ namespace Windows {
     namespace UI {
         namespace Xaml {
             namespace Controls {
+                ref class Image;
+                ref class TextBlock;
                 ref class Button;
             }
         }
@@ -40,6 +42,8 @@ namespace woblight
         bool _contentLoaded;
     
         private: ::Windows::UI::Xaml::Shapes::Rectangle^ myBackground;
+        private: ::Windows::UI::Xaml::Controls::Image^ myWoblightOverlay;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ myTextOverlay;
         private: ::Windows::UI::Xaml::Controls::Button^ myButton;
     };
 }

@@ -24,6 +24,10 @@ void ::woblight::MainPage::InitializeComponent()
 
     // Get the Rectangle named 'myBackground'
     myBackground = safe_cast<::Windows::UI::Xaml::Shapes::Rectangle^>(static_cast<Windows::UI::Xaml::IFrameworkElement^>(this)->FindName(L"myBackground"));
+    // Get the Image named 'myWoblightOverlay'
+    myWoblightOverlay = safe_cast<::Windows::UI::Xaml::Controls::Image^>(static_cast<Windows::UI::Xaml::IFrameworkElement^>(this)->FindName(L"myWoblightOverlay"));
+    // Get the TextBlock named 'myTextOverlay'
+    myTextOverlay = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(static_cast<Windows::UI::Xaml::IFrameworkElement^>(this)->FindName(L"myTextOverlay"));
     // Get the Button named 'myButton'
     myButton = safe_cast<::Windows::UI::Xaml::Controls::Button^>(static_cast<Windows::UI::Xaml::IFrameworkElement^>(this)->FindName(L"myButton"));
 }
@@ -33,8 +37,8 @@ void ::woblight::MainPage::Connect(int connectionId, Platform::Object^ target)
     switch (connectionId)
     {
     case 1:
-        (safe_cast<::Windows::UI::Xaml::Controls::Primitives::ButtonBase^>(target))->Click +=
-            ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::woblight::MainPage::*)(Platform::Object^, Windows::UI::Xaml::RoutedEventArgs^))&MainPage::Button_Click);
+        (safe_cast<::Windows::UI::Xaml::UIElement^>(target))->PointerMoved +=
+            ref new ::Windows::UI::Xaml::Input::PointerEventHandler(this, (void (::woblight::MainPage::*)(Platform::Object^, Windows::UI::Xaml::Input::PointerRoutedEventArgs^))&MainPage::Button_Click);
         break;
     }
     (void)connectionId; // Unused parameter
