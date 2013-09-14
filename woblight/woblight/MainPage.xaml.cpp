@@ -40,6 +40,18 @@ void MainPage::OnNavigatedTo(NavigationEventArgs^ e)
 
 void woblight::MainPage::Button_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
 {
-	myTime->Text = "HEY";
+	//myText->Text = "HEY";
+	//myButton->Background = ref new SolidColorBrush(Colors.Red);
+
+	
+	SolidColorBrush^ myBrush = ref new SolidColorBrush();
+	myBrush->Color = Windows::UI::Colors::AliceBlue;
+
+	myButton->Background = myBrush;
+
+	//const char myColor[10] = "#B3C98888";
+	//myButton->Background = myColor;
+
+
 }
 

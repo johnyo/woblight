@@ -12,7 +12,7 @@ namespace Windows {
     namespace UI {
         namespace Xaml {
             namespace Controls {
-                ref class TextBlock;
+                ref class Button;
             }
         }
     }
@@ -30,7 +30,7 @@ namespace woblight
     private:
         bool _contentLoaded;
     
-        private: ::Windows::UI::Xaml::Controls::TextBlock^ myTime;
+        private: ::Windows::UI::Xaml::Controls::Button^ myButton;
     };
 }
 

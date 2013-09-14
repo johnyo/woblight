@@ -9,9 +9,10 @@
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
         
-        <TextBlock x:Name="myTime"/>
+        <!--<TextBlock x:Name="myText"/>-->
 
-        <Button Click="Button_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Opacity="0.1" Background="#B3C98888"/>
+        <!--<Button Click="Button_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Opacity="0.1" Background="#B3C98888"/>-->
+        <Button Name="myButton" Click="Button_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Opacity="1.0" Background="#B3C98888" Margin="639,80,115,322"/>
 
     </Grid>
 
