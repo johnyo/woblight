@@ -1,9 +1,30 @@
-﻿Build started 9/14/2013 6:11:18 AM.
+﻿Build started 9/14/2013 8:30:54 AM.
      1>Project "C:\Users\John O'Hollaren\Documents\GitHub\woblight\woblight\woblight\woblight.vcxproj" on node 2 (Build target(s)).
-     1>Link:
+     1>CreateWinMD:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\John O'Hollaren\Documents\GitHub\woblight\woblight\Debug\woblight\woblight.exe" /INCREMENTAL /NOLOGO MMDevAPI.lib MFuuid.lib MFReadWrite.lib MFplat.lib uuid.lib kernel32.lib kernel32.lib /MANIFEST:NO /DEBUG /PDB:"C:\Users\John O'Hollaren\Documents\GitHub\woblight\woblight\Debug\woblight\woblight.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /APPCONTAINER /WINMD:ONLY /WINMDFILE:"C:\Users\John O'Hollaren\Documents\GitHub\woblight\woblight\Debug\woblight\woblight.winmd" /DYNAMICBASE /NXCOMPAT /MACHINE:X86 Debug\LayoutAwarePage.obj
+         Debug\suspensionmanager.obj
+         Debug\ToneSampleGenerator.obj
+         Debug\WASAPICapture.obj
+         Debug\App.xaml.obj
+         Debug\MainPage.xaml.obj
+         Debug\pch.obj
+         Debug\XamlTypeInfo.Impl.g.obj
+       Link:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\John O'Hollaren\Documents\GitHub\woblight\woblight\Debug\woblight\woblight.exe" /INCREMENTAL /NOLOGO MMDevAPI.lib MFuuid.lib MFReadWrite.lib MFplat.lib uuid.lib kernel32.lib kernel32.lib /MANIFEST:NO /DEBUG /PDB:"C:\Users\John O'Hollaren\Documents\GitHub\woblight\woblight\Debug\woblight\woblight.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /APPCONTAINER /WINMD:NO /WINMDFILE:"C:\Users\John O'Hollaren\Documents\GitHub\woblight\woblight\Debug\woblight\woblight.winmd" /DYNAMICBASE /NXCOMPAT /MACHINE:X86 Debug\LayoutAwarePage.obj
+         Debug\suspensionmanager.obj
+         Debug\ToneSampleGenerator.obj
+         Debug\WASAPICapture.obj
+         Debug\App.xaml.obj
+         Debug\MainPage.xaml.obj
+         Debug\pch.obj
+         Debug\XamlTypeInfo.Impl.g.obj
+         Debug\XamlTypeInfo.g.obj
+            Creating library C:\Users\John O'Hollaren\Documents\GitHub\woblight\woblight\Debug\woblight\woblight.lib and object C:\Users\John O'Hollaren\Documents\GitHub\woblight\woblight\Debug\woblight\woblight.exp
          woblight.vcxproj -> C:\Users\John O'Hollaren\Documents\GitHub\woblight\woblight\Debug\woblight\woblight.exe
+       _GenerateProjectPriFileCore:
+         C:\Program Files\Windows Kits\8.0\bin\x86\MakePri.exe New -ProjectRoot "C:\Users\John O'Hollaren\Documents\GitHub\woblight\woblight\woblight\\" -ConfigXml Debug\priconfig.xml -OutputFile "C:\Users\John O'Hollaren\Documents\GitHub\woblight\woblight\Debug\woblight\resources.pri" -IndexName 43df3519-a220-483a-90cb-e6804450e246 -Verbose -Overwrite  
      1>Done Building Project "C:\Users\John O'Hollaren\Documents\GitHub\woblight\woblight\woblight\woblight.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.12
+Time Elapsed 00:00:04.82

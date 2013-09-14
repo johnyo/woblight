@@ -7,3 +7,7 @@
 
 #include <collection.h>
 #include "App.xaml.h"
+#include <ppltasks.h>
+#include "Common.h"
+#include "Common\LayoutAwarePage.h"
+#include "Common\SuspensionManager.h"

@@ -30,11 +30,30 @@
     <ClCompile Include="App.xaml.cpp" />
     <ClCompile Include="MainPage.xaml.cpp" />
     <ClCompile Include="pch.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\WASAPICapture.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\ToneSampleGenerator.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\Common\LayoutAwarePage.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\Common\suspensionmanager.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
     <ClInclude Include="App.xaml.h" />
     <ClInclude Include="MainPage.xaml.h" />
+    <ClInclude Include="..\..\..\..\..\..\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\Common\LayoutAwarePage.h" />
+    <ClInclude Include="..\..\..\..\..\..\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\Constants.h" />
+    <ClInclude Include="..\..\..\..\..\..\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\WASAPICapture.h" />
+    <ClInclude Include="..\..\..\..\..\..\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\ToneSampleGenerator.h" />
+    <ClInclude Include="..\..\..\..\..\..\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\PlotData.h" />
+    <ClInclude Include="..\..\..\..\..\..\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\MFSampleGenerator.h" />
+    <ClInclude Include="..\..\..\..\..\..\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\DeviceState.h" />
+    <ClInclude Include="..\..\..\..\..\..\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\Common.h" />
+    <ClInclude Include="..\..\..\..\..\..\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\Common\suspensionmanager.h">
+      <Filter>Common</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest" />

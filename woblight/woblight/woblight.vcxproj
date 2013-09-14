@@ -109,6 +109,9 @@
       <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
       <DisableSpecificWarnings>4453</DisableSpecificWarnings>
     </ClCompile>
+    <Link>
+      <AdditionalDependencies>MMDevAPI.lib;MFuuid.lib;MFReadWrite.lib;MFplat.lib;uuid.lib;kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -129,6 +132,15 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\Common.h" />
+    <ClInclude Include="..\..\..\..\..\..\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\Common\LayoutAwarePage.h" />
+    <ClInclude Include="..\..\..\..\..\..\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\Common\suspensionmanager.h" />
+    <ClInclude Include="..\..\..\..\..\..\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\Constants.h" />
+    <ClInclude Include="..\..\..\..\..\..\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\DeviceState.h" />
+    <ClInclude Include="..\..\..\..\..\..\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\MFSampleGenerator.h" />
+    <ClInclude Include="..\..\..\..\..\..\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\PlotData.h" />
+    <ClInclude Include="..\..\..\..\..\..\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\ToneSampleGenerator.h" />
+    <ClInclude Include="..\..\..\..\..\..\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\WASAPICapture.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="App.xaml.h">
       <DependentUpon>App.xaml</DependentUpon>
@@ -162,6 +174,10 @@
     <Image Include="Assets\SplashScreen.png" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\Common\LayoutAwarePage.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\Common\suspensionmanager.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\ToneSampleGenerator.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\WASAPICapture.cpp" />
     <ClCompile Include="App.xaml.cpp">
       <DependentUpon>App.xaml</DependentUpon>
     </ClCompile>

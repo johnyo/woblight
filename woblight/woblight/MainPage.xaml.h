@@ -5,7 +5,10 @@
 
 #pragma once
 
+#include "pch.h"
 #include "MainPage.g.h"
+#include "Common\LayoutAwarePage.h" // Required by generated header
+#include "Constants.h"
 
 namespace woblight
 {
