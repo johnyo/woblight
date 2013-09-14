@@ -8,11 +8,12 @@
     mc:Ignorable="d">
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        
+        <TextBlock x:Name="myTime"/>
 
-        <Viewbox>
-            <Button x:ConnectionId='1' Content="Say HI"                      Height="768" Width="1366" HorizontalAlignment="Center"/>
-        </Viewbox>
-      
+        <Button x:ConnectionId='1'                      HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Opacity="0.1" Background="#B3C98888"/>
+
     </Grid>
+
 </Page>
 

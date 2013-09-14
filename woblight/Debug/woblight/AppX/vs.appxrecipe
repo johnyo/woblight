@@ -22,15 +22,15 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\John O%27Hollaren\Documents\GitHub\woblight\woblight\Debug\woblight\woblight.exe">
       <PackagePath>woblight.exe</PackagePath>
-      <Modified>2013-09-14T00:19:06.904</Modified>
+      <Modified>2013-09-14T00:53:37.544</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John O%27Hollaren\Documents\GitHub\woblight\woblight\Debug\woblight\woblight.pdb">
       <PackagePath>woblight.pdb</PackagePath>
-      <Modified>2013-09-14T00:19:07.373</Modified>
+      <Modified>2013-09-14T00:53:38.035</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John O%27Hollaren\Documents\GitHub\woblight\woblight\Debug\woblight\woblight.winmd">
       <PackagePath>woblight.winmd</PackagePath>
-      <Modified>2013-09-14T00:19:04.580</Modified>
+      <Modified>2013-09-14T00:53:35.157</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
@@ -62,7 +62,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John O%27Hollaren\Documents\GitHub\woblight\woblight\Debug\woblight\MainPage.xaml">
       <PackagePath>MainPage.xaml</PackagePath>
-      <Modified>2013-09-14T00:19:01.448</Modified>
+      <Modified>2013-09-14T00:53:29.375</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John O%27Hollaren\Documents\GitHub\woblight\woblight\Debug\woblight\resources.pri">
       <PackagePath>resources.pri</PackagePath>
