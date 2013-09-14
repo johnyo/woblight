@@ -19,6 +19,7 @@ namespace woblight
 		MainPage();
 		property int wobNum;
 		property bool wobEnabled;
+		property bool menuShowing;
 
 	protected:
 		virtual void OnNavigatedTo(Windows::UI::Xaml::Navigation::NavigationEventArgs^ e) override;
@@ -28,6 +29,8 @@ namespace woblight
 		void CustomWobClicked(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
 		void VintageWobClicked(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
 		void ClassicWobClicked(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
+		void myMenu_KeyUp(Platform::Object^ sender, Windows::UI::Xaml::Input::KeyRoutedEventArgs^ e);
+		void SubmitCustomWobText(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
 	};
 }
 

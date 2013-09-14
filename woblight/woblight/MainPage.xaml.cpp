@@ -28,6 +28,7 @@ MainPage::MainPage()
 	InitializeComponent();
 	wobNum = 0;
 	wobEnabled = false;
+	menuShowing = true;
 }
 
 /// <summary>
@@ -45,8 +46,7 @@ void MainPage::OnNavigatedTo(NavigationEventArgs^ e)
 //#####################################################################
 
 void woblight::MainPage::myWobber(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
-{
-
+{	
 	if( wobEnabled )
 	{
 		SolidColorBrush^ backgroundColor = ref new SolidColorBrush();
@@ -81,8 +81,8 @@ void woblight::MainPage::myWobber(Platform::Object^ sender, Windows::UI::Xaml::R
 
 		wobNum++;
 
-		myBackground->Fill = backgroundColor;
-		myTextOverlay->Foreground = textColor;
+		rectangle_background->Fill = backgroundColor;
+		textblock_CustomOverlay->Foreground = textColor;
 	}
 	
 	else
@@ -92,37 +92,20 @@ void woblight::MainPage::myWobber(Platform::Object^ sender, Windows::UI::Xaml::R
 }
 
 //#####################################################################
-// Custom Wob: Allows Custom Text				
-//#####################################################################
-
-void woblight::MainPage::CustomWobClicked(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
-{
-	myTextOverlay->Text = customWobInput->Text;
-
-	myMenu->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
-
-	myTextOverlay->Visibility = Windows::UI::Xaml::Visibility::Visible;
-
-	myWoblightOverlay->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
-
-	wobEnabled = true;
-}
-
-//#####################################################################
 // Vintage Wob: Wob With the Woblight Logo				
 //#####################################################################
 
 void woblight::MainPage::VintageWobClicked(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
 {
-	myTextOverlay->Text = "";
+	stackpanel_CustomWobMenu->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
 
-	myMenu->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
+	stackpanel_MainMenu->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
 
-	myTextOverlay->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
-
-	myWoblightOverlay->Visibility = Windows::UI::Xaml::Visibility::Visible;
+	image_woblightOverlay->Visibility = Windows::UI::Xaml::Visibility::Visible;
 
 	wobEnabled = true;
+
+	menuShowing = false;
 }
 
 //#####################################################################
@@ -131,13 +114,83 @@ void woblight::MainPage::VintageWobClicked(Platform::Object^ sender, Windows::UI
 
 void woblight::MainPage::ClassicWobClicked(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
 {
-	myTextOverlay->Text = "";
+	stackpanel_MainMenu->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
 
-	myMenu->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
-
-	myTextOverlay->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
-
-	myWoblightOverlay->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
+	image_woblightOverlay->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
 
 	wobEnabled = true;
+
+	menuShowing = false;
+}
+
+//#####################################################################
+// Custom Wob: Allows Custom Text				
+//#####################################################################
+
+void woblight::MainPage::CustomWobClicked(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
+{
+	textblock_CustomOverlay->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
+
+	stackpanel_MainMenu->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
+
+	image_woblightOverlay->Visibility = Windows::UI::Xaml::Visibility::Visible;
+
+	stackpanel_CustomWobMenu->Visibility = Windows::UI::Xaml::Visibility::Visible;
+
+	wobEnabled = false;
+
+	menuShowing = true;
+}
+
+//#####################################################################
+// Custom Wob Input - Secondary	Menu		
+//#####################################################################
+
+void woblight::MainPage::SubmitCustomWobText(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
+{
+	textblock_CustomOverlay->Visibility = Windows::UI::Xaml::Visibility::Visible;
+	
+	textblock_CustomOverlay->Text = customWobInput->Text;
+
+	stackpanel_CustomWobMenu->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
+
+	image_woblightOverlay->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
+
+	wobEnabled = true;
+
+	menuShowing = false;
+}
+
+//#####################################################################
+// Handle Key Presses			
+//#####################################################################
+
+void woblight::MainPage::myMenu_KeyUp(Platform::Object^ sender, Windows::UI::Xaml::Input::KeyRoutedEventArgs^ e)
+{
+
+	// If the M key is pressed, enable / disable music wobbing
+	if (e->Key == Windows::System::VirtualKey::M )
+	{
+		// Nothing right now
+	}
+
+	// Otherwise bring up the menu
+	else
+	{
+		SolidColorBrush^ backgroundColor = ref new SolidColorBrush();
+		backgroundColor->Color = Windows::UI::Colors::Black;
+		rectangle_background->Fill = backgroundColor;
+
+		wobEnabled = false;
+
+		menuShowing = true;
+		
+		image_woblightOverlay->Visibility = Windows::UI::Xaml::Visibility::Visible;
+
+		stackpanel_CustomWobMenu->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
+		
+		textblock_CustomOverlay->Text = "";
+
+		stackpanel_MainMenu->Visibility = Windows::UI::Xaml::Visibility::Visible;
+	}
 }

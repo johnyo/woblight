@@ -23,7 +23,6 @@ namespace Windows {
             namespace Controls {
                 ref class Image;
                 ref class TextBlock;
-                ref class Button;
                 ref class StackPanel;
                 ref class TextBox;
             }
@@ -43,11 +42,11 @@ namespace woblight
     private:
         bool _contentLoaded;
     
-        private: ::Windows::UI::Xaml::Shapes::Rectangle^ myBackground;
-        private: ::Windows::UI::Xaml::Controls::Image^ myWoblightOverlay;
-        private: ::Windows::UI::Xaml::Controls::TextBlock^ myTextOverlay;
-        private: ::Windows::UI::Xaml::Controls::Button^ myButton;
-        private: ::Windows::UI::Xaml::Controls::StackPanel^ myMenu;
+        private: ::Windows::UI::Xaml::Shapes::Rectangle^ rectangle_background;
+        private: ::Windows::UI::Xaml::Controls::Image^ image_woblightOverlay;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ textblock_CustomOverlay;
+        private: ::Windows::UI::Xaml::Controls::StackPanel^ stackpanel_MainMenu;
+        private: ::Windows::UI::Xaml::Controls::StackPanel^ stackpanel_CustomWobMenu;
         private: ::Windows::UI::Xaml::Controls::TextBox^ customWobInput;
     };
 }

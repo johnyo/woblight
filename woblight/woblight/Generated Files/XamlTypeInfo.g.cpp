@@ -81,6 +81,7 @@
             {
                 return ref new ::woblight::MainPage(); 
             };
+        userType->AddMemberName(L"menuShowing");
         userType->AddMemberName(L"wobEnabled");
         userType->AddMemberName(L"wobNum");
         return userType;
@@ -91,6 +92,27 @@
 
 ::Windows::UI::Xaml::Markup::IXamlMember^ ::XamlTypeInfo::InfoProvider::XamlTypeInfoProvider::CreateXamlMember(::Platform::String^ longMemberName)
 {
+    if (longMemberName == L"woblight.MainPage.menuShowing")
+    {
+        ::XamlTypeInfo::InfoProvider::XamlMember^ xamlMember = ref new ::XamlTypeInfo::InfoProvider::XamlMember(this, L"menuShowing", L"Boolean");
+        xamlMember->Getter =
+            [](Object^ instance) -> Object^
+            {
+                auto that = (::woblight::MainPage^)instance;
+                auto value = ref new ::Platform::Box<::Platform::Boolean>(that->menuShowing);
+                return value;
+            };
+
+        xamlMember->Setter =
+            [](Object^ instance, Object^ value) -> void
+            {
+                auto that = (::woblight::MainPage^)instance;
+                auto boxedValue = (::Platform::IBox<::Platform::Boolean>^)value;
+                that->menuShowing = boxedValue->Value;
+            };
+        return xamlMember;
+    }
+
     if (longMemberName == L"woblight.MainPage.wobEnabled")
     {
         ::XamlTypeInfo::InfoProvider::XamlMember^ xamlMember = ref new ::XamlTypeInfo::InfoProvider::XamlMember(this, L"wobEnabled", L"Boolean");

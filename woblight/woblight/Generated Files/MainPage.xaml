@@ -14,33 +14,44 @@
         <!-- ###########################################################-->
 
         <!-- Wob background -->
-        <Rectangle Name="myBackground" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Fill="Black"/>
+        <Rectangle Name="rectangle_background" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Fill="Black"/>
 
         <!-- Optional Wob Light image overlay-->
-        <Image Name="myWoblightOverlay" Source="woblight.png" Visibility="Visible" />
-       
+        <Image Name="image_woblightOverlay" Source="woblight.png" Visibility="Visible" />
+ 
         <!-- Optional Wob Light text overlay -->
-        <TextBlock Name="myTextOverlay" Text="" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="550" Foreground="Red" Visibility="Collapsed"  FontWeight="Bold" />
+        <TextBlock Name="textblock_CustomOverlay" Text="HI" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="550" Foreground="Red" Visibility="Collapsed"  FontWeight="Bold" />
 
         <!-- Invisible button overlawy to allow wobbing -->
-        <Button x:ConnectionId='1' Name="myButton"                          HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#B3C98888" BorderThickness="0" Opacity="0" />
+        <Button x:ConnectionId='1'                                               HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#B3C98888" BorderThickness="0" Opacity="0" />
+
 
         <!-- ###########################################################-->
         <!-- Menu Stuff -->
         <!-- ###########################################################-->
 
-        <StackPanel Name="myMenu"  Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+        <StackPanel Name="stackpanel_MainMenu" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom">
             <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom">
-                <Button x:ConnectionId='2' HorizontalAlignment="Left" Content="Classic Wob"                           Height="150" Width="350" Background="#B3FF0000" BorderThickness="5" Foreground="#FFFFA8A8" BorderBrush="#FFFFA8A8" FontSize="50" />
+                <Button x:ConnectionId='3' HorizontalAlignment="Left" Content="Classic Wob"                           Height="150" Width="350" Background="#B3FF0000" BorderThickness="5" Foreground="#FFFFA8A8" BorderBrush="#FFFFA8A8" FontSize="50" />
                 <Rectangle Fill="Transparent" Width="75" />
-                <Button x:ConnectionId='3' HorizontalAlignment="Left" Content="Custom Wob"                          Height="150" Width="350" Background="#B300FF17" BorderThickness="5" Foreground="#FF99FF8F" BorderBrush="#FF99FF8F" FontSize="50" />
+                <Button x:ConnectionId='4' HorizontalAlignment="Left" Content="Custom Wob"                          Height="150" Width="350" Background="#B300FF17" BorderThickness="5" Foreground="#FF99FF8F" BorderBrush="#FF99FF8F" FontSize="50" />
                 <Rectangle Fill="Transparent" Width="75" />
-                <Button x:ConnectionId='4' HorizontalAlignment="Left" Content="Vintage Wob"                           Height="150" Width="350" Background="#B3F300FF" BorderThickness="5" Foreground="#FFFBA6FF" BorderBrush="#FFFBA6FF" FontSize="50" />
+                <Button x:ConnectionId='5' HorizontalAlignment="Left" Content="Vintage Wob"                           Height="150" Width="350" Background="#B3F300FF" BorderThickness="5" Foreground="#FFFBA6FF" BorderBrush="#FFFBA6FF" FontSize="50" />
             </StackPanel>
             <Rectangle Fill="Transparent" Height="25" />
         </StackPanel>
-        
-        <TextBox Name="customWobInput" Width="200" Height="40" HorizontalAlignment="Center" Visibility="Collapsed" />
+
+        <!-- ###########################################################-->
+        <!-- Secondary Custom Wob Menu -->
+        <!-- ###########################################################-->
+
+        <StackPanel Name="stackpanel_CustomWobMenu" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Visibility="Collapsed">
+            <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" >
+                <TextBox Name="customWobInput" Width="400" Height="80" HorizontalAlignment="Center" FontSize="48" />
+                <Button x:ConnectionId='2' Content="Start Wobbing" Height="80" Width="300" Background="#B300FF17" BorderThickness="5" Foreground="#FF99FF8F" BorderBrush="#FF99FF8F" FontSize="40"                             />
+            </StackPanel>
+            <Rectangle Fill="Transparent" Height="55" />
+        </StackPanel>
 
     </Grid>
 
