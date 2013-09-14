@@ -5,7 +5,7 @@
     <WindowsUser>John O%27Hollaren</WindowsUser>
     <SolutionConfiguration>Debug|Win32</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
-    <RegisteredManifestChecksum>7C135DCB6981880BB213EFB40E1D596BBE62316D01585F7B91DEBBD5E3414E62</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>320F27268EBDE81B0DF270115B52F9C50A2E5B810C41110C1ABC06EA6469AE7D</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>43df3519-a220-483a-90cb-e6804450e246_1.0.0.0_x86__kkp8bd1vzdcmc</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>43df3519-a220-483a-90cb-e6804450e246_kkp8bd1vzdcmc!App</RegisteredUserModeAppID>
     <RegisteredPackageID>43df3519-a220-483a-90cb-e6804450e246</RegisteredPackageID>
@@ -16,21 +16,21 @@
     <AppXManifest Include="C:\Users\John O%27Hollaren\Documents\GitHub\woblight\woblight\Debug\woblight\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-09-14T04:30:13.811</Modified>
+      <Modified>2013-09-14T10:07:00.734</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\John O%27Hollaren\Documents\GitHub\woblight\woblight\Debug\woblight\woblight.exe">
       <PackagePath>woblight.exe</PackagePath>
-      <Modified>2013-09-14T09:43:10.095</Modified>
+      <Modified>2013-09-14T10:06:59.168</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John O%27Hollaren\Documents\GitHub\woblight\woblight\Debug\woblight\woblight.pdb">
       <PackagePath>woblight.pdb</PackagePath>
-      <Modified>2013-09-14T09:43:10.614</Modified>
+      <Modified>2013-09-14T10:06:59.696</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John O%27Hollaren\Documents\GitHub\woblight\woblight\Debug\woblight\woblight.winmd">
       <PackagePath>woblight.winmd</PackagePath>
-      <Modified>2013-09-14T09:43:07.035</Modified>
+      <Modified>2013-09-14T10:06:56.394</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\woblight.png">
       <PackagePath>woblight.png</PackagePath>
@@ -39,12 +39,12 @@
     <AppxPackagedFile Include="C:\Users\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-09-14T03:20:51.604</Modified>
+      <Modified>2013-09-14T09:55:55.752</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\Assets\SmallLogo.png">
       <PackagePath>Assets\SmallLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-09-14T03:20:51.604</Modified>
+      <Modified>2013-09-14T09:55:56.511</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
@@ -54,7 +54,7 @@
     <AppxPackagedFile Include="C:\Users\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\Assets\SplashScreen.png">
       <PackagePath>Assets\SplashScreen.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-09-14T03:20:51.606</Modified>
+      <Modified>2013-09-14T10:10:26.437</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John O%27Hollaren\Documents\GitHub\woblight\woblight\Debug\woblight\App.xaml">
       <PackagePath>App.xaml</PackagePath>
@@ -66,11 +66,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John O%27Hollaren\Documents\GitHub\woblight\woblight\Debug\woblight\MainPage.xaml">
       <PackagePath>MainPage.xaml</PackagePath>
-      <Modified>2013-09-14T09:42:15.935</Modified>
+      <Modified>2013-09-14T10:06:23.550</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John O%27Hollaren\Documents\GitHub\woblight\woblight\Debug\woblight\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-09-14T04:30:13.749</Modified>
+      <Modified>2013-09-14T10:06:59.769</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

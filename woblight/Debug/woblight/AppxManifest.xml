@@ -22,7 +22,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="woblight.exe" EntryPoint="woblight.App">
-      <VisualElements DisplayName="woblight" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="woblight" ForegroundText="light" BackgroundColor="#464646">
+      <VisualElements DisplayName="woblight" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="woblight" ForegroundText="light" BackgroundColor="#000000">
         <DefaultTile ShowName="allLogos" />
         <SplashScreen Image="Assets\SplashScreen.png" />
       </VisualElements>
