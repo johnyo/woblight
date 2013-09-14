@@ -9,5 +9,9 @@
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
+        <Viewbox>
+            <Button Content="Say HI" Click="Button_Click" Height="768" Width="1366" HorizontalAlignment="Center"/>
+        </Viewbox>
+      
     </Grid>
 </Page>
