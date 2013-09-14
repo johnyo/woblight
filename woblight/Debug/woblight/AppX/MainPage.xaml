@@ -10,10 +10,12 @@
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
         
         <!--<TextBlock x:Name="myText"/>-->
+        <Rectangle Name="myBackground" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Fill="Blue"/>
 
         <!--<Button Click="Button_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Opacity="0.1" Background="#B3C98888"/>-->
-        <Button x:ConnectionId='1' Name="myButton"                      HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Opacity="1.0" Background="#B3C98888"/>
-
+        <Button x:ConnectionId='1' Name="myButton"                      HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Opacity="0.0" Background="#B3C98888"/>
+            
+        
     </Grid>
 
 </Page>

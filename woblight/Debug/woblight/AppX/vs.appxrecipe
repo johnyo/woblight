@@ -22,15 +22,15 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\John O%27Hollaren\Documents\GitHub\woblight\woblight\Debug\woblight\woblight.exe">
       <PackagePath>woblight.exe</PackagePath>
-      <Modified>2013-09-14T03:44:31.376</Modified>
+      <Modified>2013-09-14T04:12:21.400</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John O%27Hollaren\Documents\GitHub\woblight\woblight\Debug\woblight\woblight.pdb">
       <PackagePath>woblight.pdb</PackagePath>
-      <Modified>2013-09-14T03:44:31.874</Modified>
+      <Modified>2013-09-14T04:12:21.900</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John O%27Hollaren\Documents\GitHub\woblight\woblight\Debug\woblight\woblight.winmd">
       <PackagePath>woblight.winmd</PackagePath>
-      <Modified>2013-09-14T03:44:28.952</Modified>
+      <Modified>2013-09-14T04:12:18.817</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John O%27Hollaren\Documents\GitHub\woblight\woblight\woblight\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
@@ -58,11 +58,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John O%27Hollaren\Documents\GitHub\woblight\woblight\Debug\woblight\Common\StandardStyles.xaml">
       <PackagePath>Common\StandardStyles.xaml</PackagePath>
-      <Modified>2013-09-14T03:20:51.608</Modified>
+      <Modified>2013-09-14T04:05:49.313</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John O%27Hollaren\Documents\GitHub\woblight\woblight\Debug\woblight\MainPage.xaml">
       <PackagePath>MainPage.xaml</PackagePath>
-      <Modified>2013-09-14T03:44:25.097</Modified>
+      <Modified>2013-09-14T04:11:25.574</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\John O%27Hollaren\Documents\GitHub\woblight\woblight\Debug\woblight\resources.pri">
       <PackagePath>resources.pri</PackagePath>

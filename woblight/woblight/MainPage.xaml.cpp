@@ -53,6 +53,10 @@ void woblight::MainPage::Button_Click(Platform::Object^ sender, Windows::UI::Xam
 	myButton->Background = myBrush;
 	*/
 
+	//SolidColorBrush^ myBrush = ref new SolidColorBrush();
+	//myBrush->Color = Windows::UI::Colors::AliceBlue;
+
+
 	SolidColorBrush^ myBrush = ref new SolidColorBrush();
 
 	switch( wobNum % 6 ) {
@@ -78,9 +82,7 @@ void woblight::MainPage::Button_Click(Platform::Object^ sender, Windows::UI::Xam
 
 	wobNum++;
 
-	std::cout << "\n\nWobNum: " << wobNum << "\n\n";
-
-	myButton->Background = myBrush;
+	myBackground->Fill = myBrush;
 
 }
 

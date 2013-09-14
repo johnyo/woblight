@@ -11,6 +11,15 @@
 namespace Windows {
     namespace UI {
         namespace Xaml {
+            namespace Shapes {
+                ref class Rectangle;
+            }
+        }
+    }
+}
+namespace Windows {
+    namespace UI {
+        namespace Xaml {
             namespace Controls {
                 ref class Button;
             }
@@ -30,6 +39,7 @@ namespace woblight
     private:
         bool _contentLoaded;
     
+        private: ::Windows::UI::Xaml::Shapes::Rectangle^ myBackground;
         private: ::Windows::UI::Xaml::Controls::Button^ myButton;
     };
 }

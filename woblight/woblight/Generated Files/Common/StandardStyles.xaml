@@ -225,6 +225,8 @@
         </Setter>
     </Style>
 
+    
+    
     <Style x:Key="TextPrimaryButtonStyle" TargetType="ButtonBase" BasedOn="{StaticResource TextButtonStyle}">
         <Setter Property="Foreground" Value="{StaticResource ApplicationHeaderForegroundThemeBrush}"/>
     </Style>
