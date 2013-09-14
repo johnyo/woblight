@@ -62,6 +62,11 @@
         return ref new XamlSystemBaseType(typeName);
     }
 
+    if (typeName == L"Boolean")
+    {
+        return ref new XamlSystemBaseType(typeName);
+    }
+
     if (typeName == L"Int32")
     {
         return ref new XamlSystemBaseType(typeName);
@@ -76,6 +81,7 @@
             {
                 return ref new ::woblight::MainPage(); 
             };
+        userType->AddMemberName(L"wobEnabled");
         userType->AddMemberName(L"wobNum");
         return userType;
     }
@@ -85,6 +91,27 @@
 
 ::Windows::UI::Xaml::Markup::IXamlMember^ ::XamlTypeInfo::InfoProvider::XamlTypeInfoProvider::CreateXamlMember(::Platform::String^ longMemberName)
 {
+    if (longMemberName == L"woblight.MainPage.wobEnabled")
+    {
+        ::XamlTypeInfo::InfoProvider::XamlMember^ xamlMember = ref new ::XamlTypeInfo::InfoProvider::XamlMember(this, L"wobEnabled", L"Boolean");
+        xamlMember->Getter =
+            [](Object^ instance) -> Object^
+            {
+                auto that = (::woblight::MainPage^)instance;
+                auto value = ref new ::Platform::Box<::Platform::Boolean>(that->wobEnabled);
+                return value;
+            };
+
+        xamlMember->Setter =
+            [](Object^ instance, Object^ value) -> void
+            {
+                auto that = (::woblight::MainPage^)instance;
+                auto boxedValue = (::Platform::IBox<::Platform::Boolean>^)value;
+                that->wobEnabled = boxedValue->Value;
+            };
+        return xamlMember;
+    }
+
     if (longMemberName == L"woblight.MainPage.wobNum")
     {
         ::XamlTypeInfo::InfoProvider::XamlMember^ xamlMember = ref new ::XamlTypeInfo::InfoProvider::XamlMember(this, L"wobNum", L"Int32");

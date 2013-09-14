@@ -24,6 +24,8 @@ namespace Windows {
                 ref class Image;
                 ref class TextBlock;
                 ref class Button;
+                ref class StackPanel;
+                ref class TextBox;
             }
         }
     }
@@ -45,6 +47,9 @@ namespace woblight
         private: ::Windows::UI::Xaml::Controls::Image^ myWoblightOverlay;
         private: ::Windows::UI::Xaml::Controls::TextBlock^ myTextOverlay;
         private: ::Windows::UI::Xaml::Controls::Button^ myButton;
+        private: ::Windows::UI::Xaml::Controls::StackPanel^ myMenu;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ myHelperText;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ customWobInput;
     };
 }
 

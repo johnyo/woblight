@@ -9,18 +9,36 @@
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
         
+        <!-- ###########################################################-->
+        <!-- Background Stuff -->
+        <!-- ###########################################################-->
+
         <!-- Wob background -->
-        <Rectangle Name="myBackground" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Fill="Blue"/>
+        <Rectangle Name="myBackground" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Fill="Black"/>
 
         <!-- Optional Wob Light image overlay-->
         <Image Name="myWoblightOverlay" Source="woblight.png" Visibility="Collapsed" />
        
         <!-- Optional Wob Light text overlay -->
-        <TextBlock Name="myTextOverlay" Text="John" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="550" Foreground="Red" FontWeight="Bold" />
+        <TextBlock Name="myTextOverlay" Text="" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="550" Foreground="Red" Visibility="Collapsed"  FontWeight="Bold" />
 
         <!-- Invisible button overlawy to allow wobbing -->
-        <Button x:ConnectionId='1' Name="myButton"                              HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Opacity="0.0" Background="#B3C98888" />   
-        
+        <Button x:ConnectionId='1' Name="myButton"                          HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Opacity="0.0" Background="#B3C98888" />
+
+        <!-- ###########################################################-->
+        <!-- Menu Stuff -->
+        <!-- ###########################################################-->
+
+        <StackPanel Name="myMenu" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Visible">
+            <Button x:ConnectionId='2' Content="Classic Wob"                           />
+            <StackPanel Orientation="Horizontal">
+                <TextBox Name="customWobInput" Width="300" HorizontalAlignment="Left"/>
+                <Button x:ConnectionId='4' Content="Custom Wob"                         />
+            </StackPanel>
+            <Button x:ConnectionId='3' Content="Vintage Wob"                           />
+            <TextBlock Name="myHelperText" Text="Space for Menu          M for Music" HorizontalAlignment="Center" FontSize="20" Foreground="White" Visibility="Visible" />
+        </StackPanel>
+
     </Grid>
 
 </Page>
