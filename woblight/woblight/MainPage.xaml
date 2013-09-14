@@ -17,27 +17,30 @@
         <Rectangle Name="myBackground" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Fill="Black"/>
 
         <!-- Optional Wob Light image overlay-->
-        <Image Name="myWoblightOverlay" Source="woblight.png" Visibility="Collapsed" />
+        <Image Name="myWoblightOverlay" Source="woblight.png" Visibility="Visible" />
        
         <!-- Optional Wob Light text overlay -->
         <TextBlock Name="myTextOverlay" Text="" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="550" Foreground="Red" Visibility="Collapsed"  FontWeight="Bold" />
 
         <!-- Invisible button overlawy to allow wobbing -->
-        <Button Name="myButton" PointerMoved="myWobber"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Opacity="0.0" Background="#B3C98888" />
+        <Button Name="myButton" PointerMoved="myWobber"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#B3C98888" BorderThickness="0" Opacity="0" />
 
         <!-- ###########################################################-->
         <!-- Menu Stuff -->
         <!-- ###########################################################-->
 
-        <StackPanel Name="myMenu" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Visible">
-            <Button Content="Classic Wob" Click="ClassicWobClicked" />
-            <StackPanel Orientation="Horizontal">
-                <TextBox Name="customWobInput" Width="300" HorizontalAlignment="Left"/>
-                <Button Content="Custom Wob" Click="CustomWobClicked"/>
+        <StackPanel Name="myMenu"  Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                <Button HorizontalAlignment="Left" Content="Classic Wob" Click="ClassicWobClicked" Height="150" Width="350" Background="#B3FF0000" BorderThickness="5" Foreground="#FFFFA8A8" BorderBrush="#FFFFA8A8" FontSize="50" />
+                <Rectangle Fill="Transparent" Width="75" />
+                <Button HorizontalAlignment="Left" Content="Custom Wob" Click="CustomWobClicked" Height="150" Width="350" Background="#B300FF17" BorderThickness="5" Foreground="#FF99FF8F" BorderBrush="#FF99FF8F" FontSize="50" />
+                <Rectangle Fill="Transparent" Width="75" />
+                <Button HorizontalAlignment="Left" Content="Vintage Wob" Click="VintageWobClicked" Height="150" Width="350" Background="#B3F300FF" BorderThickness="5" Foreground="#FFFBA6FF" BorderBrush="#FFFBA6FF" FontSize="50" />
             </StackPanel>
-            <Button Content="Vintage Wob" Click="VintageWobClicked" />
-            <TextBlock Name="myHelperText" Text="Space for Menu          M for Music" HorizontalAlignment="Center" FontSize="20" Foreground="White" Visibility="Visible" />
+            <Rectangle Fill="Transparent" Height="25" />
         </StackPanel>
+        
+        <TextBox Name="customWobInput" Width="200" Height="40" HorizontalAlignment="Center" Visibility="Collapsed" />
 
     </Grid>
 
