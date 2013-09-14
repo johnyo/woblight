@@ -62,6 +62,11 @@
         return ref new XamlSystemBaseType(typeName);
     }
 
+    if (typeName == L"Int32")
+    {
+        return ref new XamlSystemBaseType(typeName);
+    }
+
     if (typeName == L"woblight.MainPage")
     {
         ::XamlTypeInfo::InfoProvider::XamlUserType^ userType = ref new ::XamlTypeInfo::InfoProvider::XamlUserType(this, typeName, GetXamlTypeByName(L"Windows.UI.Xaml.Controls.Page"));
@@ -71,6 +76,7 @@
             {
                 return ref new ::woblight::MainPage(); 
             };
+        userType->AddMemberName(L"wobNum");
         return userType;
     }
 
@@ -79,8 +85,27 @@
 
 ::Windows::UI::Xaml::Markup::IXamlMember^ ::XamlTypeInfo::InfoProvider::XamlTypeInfoProvider::CreateXamlMember(::Platform::String^ longMemberName)
 {
-    // No Local Properties
-    (void)longMemberName; // Unused parameter
+    if (longMemberName == L"woblight.MainPage.wobNum")
+    {
+        ::XamlTypeInfo::InfoProvider::XamlMember^ xamlMember = ref new ::XamlTypeInfo::InfoProvider::XamlMember(this, L"wobNum", L"Int32");
+        xamlMember->Getter =
+            [](Object^ instance) -> Object^
+            {
+                auto that = (::woblight::MainPage^)instance;
+                auto value = ref new ::Platform::Box<::default::int32>(that->wobNum);
+                return value;
+            };
+
+        xamlMember->Setter =
+            [](Object^ instance, Object^ value) -> void
+            {
+                auto that = (::woblight::MainPage^)instance;
+                auto boxedValue = (::Platform::IBox<::default::int32>^)value;
+                that->wobNum = boxedValue->Value;
+            };
+        return xamlMember;
+    }
+
     return nullptr;
 }
 

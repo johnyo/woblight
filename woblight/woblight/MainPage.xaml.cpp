@@ -5,6 +5,7 @@
 
 #include "pch.h"
 #include "MainPage.xaml.h"
+#include <iostream>
 #include <time.h>
 
 using namespace woblight;
@@ -25,6 +26,7 @@ using namespace Windows::UI::Xaml::Navigation;
 MainPage::MainPage()
 {
 	InitializeComponent();
+	wobNum = 0;
 }
 
 /// <summary>
@@ -43,15 +45,42 @@ void woblight::MainPage::Button_Click(Platform::Object^ sender, Windows::UI::Xam
 	//myText->Text = "HEY";
 	//myButton->Background = ref new SolidColorBrush(Colors.Red);
 
-	
+	// THIS WORKS
+	/*
 	SolidColorBrush^ myBrush = ref new SolidColorBrush();
 	myBrush->Color = Windows::UI::Colors::AliceBlue;
 
 	myButton->Background = myBrush;
+	*/
 
-	//const char myColor[10] = "#B3C98888";
-	//myButton->Background = myColor;
+	SolidColorBrush^ myBrush = ref new SolidColorBrush();
 
+	switch( wobNum % 6 ) {
+		case 0:
+			myBrush->Color = Windows::UI::Colors::AliceBlue;
+			break;
+		case 1:
+			myBrush->Color = Windows::UI::Colors::Black;
+			break;
+		case 2:
+			myBrush->Color = Windows::UI::Colors::Blue;
+			break;
+		case 3:
+			myBrush->Color = Windows::UI::Colors::Red;
+			break;
+		case 4:
+			myBrush->Color = Windows::UI::Colors::Yellow;
+			break;
+		default:
+			myBrush->Color = Windows::UI::Colors::Orange;
+			break;
+	}
+
+	wobNum++;
+
+	std::cout << "\n\nWobNum: " << wobNum << "\n\n";
+
+	myButton->Background = myBrush;
 
 }
 
